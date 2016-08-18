@@ -2,6 +2,9 @@
 <head>
 
 <style>
+    div, textarea {
+        box-sizing:border-box;
+    }
     textarea {
 		resize: none;
 		position: absolute;
@@ -19,6 +22,7 @@
     .a {
         position: relative;
         width: 300px;
+        border: 1px solid blue;
 	} 
 </style>
 </head>
@@ -31,4 +35,5 @@
     <textarea readonly="readonly"
          >I am a bunch of variable-length text that you can like, click and use cmd+a to select all. for some reason.</textarea>
     </div>
+    I am a bunch of other text. I should not be selected by "select-all"
 </body>
